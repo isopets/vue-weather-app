@@ -3,7 +3,7 @@
     <div class="container">
       <Title />
       <Form @submit-form="getWeather" />
-      <Results :results="results" v-if="!loading" />
+      <Results :results="results" />
       <Loading v-if="loading" />
     </div>
   </div>
