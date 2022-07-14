@@ -11,6 +11,7 @@
 
 <script setup>
 import {reactive, ref} from "vue";
+import {reactive} from "vue";
 import axios from "axios";
 import Title from "./components/Title.vue";
 import Form from "./components/Form.vue";
