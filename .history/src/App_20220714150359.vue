@@ -8,11 +8,7 @@ import Form from "./components/Form.vue";
 import Results from "./components/Results.vue";
 
 const results = reactive({
-  country: "",
-  cityName: "",
-  temperature: "",
-  conditionText: "",
-  icon: "",
+  
 });
 
 const getWeather = () => {
@@ -20,12 +16,6 @@ const getWeather = () => {
     .get(
       "http://api.weatherapi.com/v1/current.json?key=75a9ebd02b7d4a81b1a40652221407&q=London&aqi=no"
     )
-    .then(res => {
-      (results.country = res.data.location.country),
-        (results.cityName = res.data.location.name),
-        (results.temperature = res.data.current.temp_c),
-        (results.conditionText = res.data.current.condition.text),
-        (results.icon = res.data.current.condition.icon);
-    });
+    .then(res => console.log(res));
 };
 </script>
