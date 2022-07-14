@@ -1,4 +1,4 @@
-<template><Title /><Form /></template>
+<template><Title /></template>
 
 <script setup>
 import Title from "./components/Title.vue";
