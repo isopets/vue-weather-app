@@ -14,7 +14,6 @@ import axios from "axios";
 import Title from "./components/Title.vue";
 import Form from "./components/Form.vue";
 import Results from "./components/Results.vue";
-import "./assets/base.css";
 
 const results = reactive({
   country: "",
