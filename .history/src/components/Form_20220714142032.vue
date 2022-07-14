@@ -9,8 +9,6 @@
 import {ref} from "vue";
 
 const city = ref("");
-const submitForm = () => {
-  emits("submit-form");
-};
-const emits = defineEmits(["submit-form"]);
+const submitForm = () => {};
+const emits = defineEmits([]);
 </script>

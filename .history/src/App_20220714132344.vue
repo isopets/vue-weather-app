@@ -1,6 +1,4 @@
-<template>
-  <Title /><Form /> <button @click="getWeather">getWeatherのテスト</button>
-</template>
+<template><Title /><Form /> <button>getWeatherのテスト</button></template>
 
 <script setup>
 import axios from "axios";
