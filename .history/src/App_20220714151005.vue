@@ -1,5 +1,5 @@
 <template>
-  <Title /><Form @submit-form="getWeather" /><Results :results="results" />
+  <Title /><Form @submit-form="getWeather" /> <Results />{{ results }}
 </template>
 
 <script setup>
