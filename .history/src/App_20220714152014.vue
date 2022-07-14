@@ -20,7 +20,7 @@ const results = reactive({
 const getWeather = city => {
   axios
     .get(
-      `http://api.weatherapi.com/v1/current.json?key=75a9ebd02b7d4a81b1a40652221407&q=${city}&aqi=no`
+      "http://api.weatherapi.com/v1/current.json?key=75a9ebd02b7d4a81b1a40652221407&q=city&aqi=no"
     )
     .then(res => {
       (results.country = res.data.location.country),
